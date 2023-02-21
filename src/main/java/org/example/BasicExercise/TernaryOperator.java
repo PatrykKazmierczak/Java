@@ -32,5 +32,31 @@ public class TernaryOperator {
 
         System.out.println("Your " + result + " the exam");
         sc.close();
+
+        double number1 = 20.00;
+        double number2 = 100.00;
+        double sum;
+        double multiplySum;
+        double reminder = 4.00;
+        double number3 = 30.00;
+        double check = 0.00;
+
+        sum = number1 + number2;
+
+        multiplySum = sum / number3;
+
+        double checkReminder = multiplySum / reminder;
+
+        System.out.println(sum);
+        System.out.println(multiplySum);
+        System.out.println(multiplySum / reminder);
+
+        boolean isTrue = (checkReminder == check) ? true : false;
+
+        if(isTrue) {
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
     }
 }
