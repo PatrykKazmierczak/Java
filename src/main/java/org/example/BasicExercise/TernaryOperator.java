@@ -58,5 +58,17 @@ public class TernaryOperator {
         } else {
             System.out.println("False");
         }
+
+        double myFirstValue = 20.00d;
+        double mySecondValue = 80.00d;
+        double myValueTotal = (myFirstValue + mySecondValue) * 100.00d;
+        System.out.println("MyValuesTotal = " + myValueTotal);
+        double theReminder = myValueTotal % 40.00d;
+        System.out.println("theRemainder = " + theReminder);
+        boolean isNotReminder = (theReminder == 0) ? true : false;
+        System.out.println("isNoReminder = " + isNotReminder);
+        if(!isNotReminder) {
+            System.out.println("Got some reminder");
+        }
     }
 }
