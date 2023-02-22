@@ -8,11 +8,12 @@ public class CodeBlocksAndIfThenElseStatements {
         int levelCompleted = 5;
         int bonus = 100;
 
-        if(score <= 5000) {
-            System.out.println("Your score was less than " + score);
-        } else {
-            System.out.println("Your score was grater than " + score );
+        if(score <= 5000 && score > 1000) {
+            System.out.println("Your score was less than " + score + " but grater than 1000");
+        } else if (score < 1000) {
+            System.out.println("Your score was less than 1000");
         }
-
+            System.out.println("Got here");
+        }
     }
-}
+
