@@ -18,7 +18,6 @@ public class MethodesInJava {
 
         System.out.println("Next highScore is: " +
                 calculateScore(gameOver, score, levelCompleted, bonus));
-
     }
 
 //    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
