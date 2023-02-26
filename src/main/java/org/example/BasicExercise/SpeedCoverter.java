@@ -31,7 +31,7 @@ public class SpeedCoverter {
 //        toMilesPerHour(25.42); → should return value 16
 //        toMilesPerHour(75.114); → should return value 47
 
-        toMilesPerHour(10.25);
+//        toMilesPerHour(10.25);
         printConversion(10.25);
 
     }
