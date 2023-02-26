@@ -9,7 +9,7 @@ public class MethodesInJava {
         int bonus = 100;
 
 
-        int highScore = calculateScore(gameOver,score, levelCompleted, bonus);
+        int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
         System.out.println("High highScore equals: " + highScore);
 
         score = 950;
@@ -18,6 +18,7 @@ public class MethodesInJava {
 
         System.out.println("Next highScore is: " +
                 calculateScore(gameOver, score, levelCompleted, bonus));
+
     }
 
 //    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
@@ -51,6 +52,7 @@ public class MethodesInJava {
         return finalScore;
     }
 }
+
 
 
 
