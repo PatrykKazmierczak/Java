@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.example.BasicExercise.SpeedCoverter.printConversion;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class TestSpeedConverter {
+public class TestSpeedConverter {
 
     @Test
     public void testToMilesPerHour1() {

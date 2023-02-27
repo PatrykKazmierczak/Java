@@ -33,6 +33,9 @@ public class SpeedCoverter {
 
 //        toMilesPerHour(10.25);
         printConversion(10.25);
+        printConversion2(10.25);
+        toMilesPerHour(10.25);
+        toMilesPerHour2(10.25);
 
     }
     public static double toMilesPerHour (double kilometersPerHour) {
@@ -48,6 +51,14 @@ public class SpeedCoverter {
         }
         return Math.round(milesPerHour);
     }
+
+    public static long toMilesPerHour2(double kilometresPerHours) {
+        if (kilometresPerHours < 0) {
+            return -1;
+        }
+        return Math.round(kilometresPerHours * 0.6215);
+
+    }
     /*2. Write another method called printConversion with 1 parameter of type double with the name kilometersPerHour.
 
     This method should not return anything (void) and it needs to calculate milesPerHour from the kilometersPerHour parameter. */
@@ -59,5 +70,14 @@ public class SpeedCoverter {
             System.out.println(kilometersPerHour + " km/h " + toMilesPerHour(kilometersPerHour) + " mi/h");
         }
         return kilometersPerHour;
+    }
+
+    public static void printConversion2( double kilometresPerHours) {
+        if (kilometresPerHours < 0) {
+            System.out.println("Invalid Value");
+        } else {
+            long milesPerHour = toMilesPerHour2(kilometresPerHours);
+            System.out.println(kilometresPerHours + " km/h = " + milesPerHour + " mi/h");
+        }
     }
 }
