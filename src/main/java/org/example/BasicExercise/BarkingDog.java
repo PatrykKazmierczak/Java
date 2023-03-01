@@ -1,6 +1,5 @@
 package org.example.BasicExercise;
 
-import java.sql.SQLOutput;
 
 public class BarkingDog {
 
