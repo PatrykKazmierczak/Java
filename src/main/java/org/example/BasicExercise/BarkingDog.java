@@ -1,5 +1,7 @@
 package org.example.BasicExercise;
 
+import java.sql.SQLOutput;
+
 public class BarkingDog {
 
     /*Barking Dog
@@ -35,8 +37,24 @@ public class BarkingDog {
     NOTE: Do not add a  main method to solution code.*/
     public static void main(String[] args) {
 
-    }
-    public static void shouldWakeUp (boolean isBarking, int hour){
 
+        shouldWakeUp2(true,7);
+        shouldWakeUp2 (true, 1);
+        shouldWakeUp2 (false, 2);
+        shouldWakeUp2 (true, 9);
+        shouldWakeUp2 (true, -1);
+
+    }
+
+    public static boolean shouldWakeUp2(boolean barking,int hourOfDay){
+
+        if (hourOfDay <0 || hourOfDay >23){
+            return false;
+        }
+        if (barking == true && hourOfDay <8 || hourOfDay >22){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
