@@ -45,15 +45,24 @@ package org.example.BasicExercise;
 public class LeapYearCalculator {
     public static void main(String[] args) {
 
+        isLeapYear(-15);
     }
-    public static boolean isLeapYear(int year) {
-        if(year >=1 || year <= 9999) {
-            return true;
-        }
-        if(year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
-            System.out.println("The year is a leap year (it has 366 days)");
-            return true
+           /*To determine whether a year is a leap year, follow these steps:
+            1. If the year is evenly divisible by 4, go to step 2. Otherwise, go to step 5.
+            2. If the year is evenly divisible by 100, go to step 3. Otherwise, go to step 4.
+            3. If the year is evenly divisible by 400, go to step 4. Otherwise, go to step 5.
+            4. The year is a leap year (it has 366 days). The method isLeapYear needs to return true.
+            5. The year is not a leap year (it has 365 days). The method isLeapYear needs to return false. */
+    public static void isLeapYear(int year) {
 
+            if ((year % 4 == 0) && year % 100 != 0) {
+                System.out.println(year + " is a leap year.");
+            } else if ((year % 4 == 0) && (year % 100 == 0) && (year % 400 == 0)) {
+                System.out.println(year + " is a leap year.");
+            } else {
+                System.out.println(year + " is not a leap year.");
+            }
         }
     }
-}
+
+
